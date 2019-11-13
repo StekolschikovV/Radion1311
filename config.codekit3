@@ -55,6 +55,34 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/jade/pagination.jade": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/jade/pagination.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/jade/test.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/jade/test.html",
+		"oF": 0
+		},
+	"/jade/test.jade": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/jade/test.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/lib/bootstrap-4.3.1.css": {
 		"aP": 1,
 		"bl": 0,

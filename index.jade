@@ -6,8 +6,8 @@ html(lang='en')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         // Bootstrap CSS
         //link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
-        //link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.7.0/css/all.css')
-        title Hello, world!
+        link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.7.0/css/all.css')
+        title ВИДЕОПОИСК
         link(rel='stylesheet', href='./lib/bootstrap-4.3.1.css')
         link(rel='stylesheet', href='style.css')
 
@@ -15,20 +15,20 @@ html(lang='en')
 
         div(class="container-fluid", id="search")
             div(class="row")
-                div(class="col-md-9")
+                div(class="col-md-8")
                     div(class="row")
-                        div(class="col-md-2", id="logo") ВИДЕО
+                        div(class="col-md-3", id="logo") ВИДЕО
                             span ПОИСК
-                        div(class="col-md-10")
+                        div(class="col-md-9")
                             form
                                 input(type="text", placeholder="enter request")
                                 input(type="submit", value="Поиск")
-
-                div(class="col-md-3 text-right d-none d-lg-block")
+                div(class="col-md-4 text-right d-none d-lg-block")
                     a(href="#") Войти
-                div(class="col-md-10")
+
+                div(class="col-md-8 second-line")
                     div(class="row")
-                        div(class="col-md-2")
+                        div(class="col-md-3")
                         div(class="col-md-2")
                             .form-check
                                 input.form-check-input(type='checkbox')
@@ -42,6 +42,12 @@ html(lang='en')
                              .form-check
                                  input.form-check-input(type='checkbox')
                                  label.form-check-label Качество 720 и выше
+
+
+
+
+
+
 
         div(class="container-fluid", id="content")
             div(class="row")
@@ -132,12 +138,21 @@ html(lang='en')
                         div(class="col-12 thumbs")
                             .row
                                 div(class="col-7") Это телешоу понравилось 93% пользователей
-                                div(class="col-5  text-right")
-                                    i(class="fas fa-thumbs-up")
-                                    i(class="fas fa-thumbs-down")
+                                div(class="col-5 text-right icon-block")
+                                    .icon
+                                        i(class="fas fa-thumbs-down")
+                                    .icon
+                                        i(class="fas fa-thumbs-up")
                         div(class="col-12 desc") Описание
                         div(class="col-12 actors") Актеры
-                        div(class="col-12 comments") Комментарии
+                        div(class="col-12 comments")
+                            span Комментарии
+
+
+
+        include jade/pagination.jade
+
+
 
         footer(class="container-fluid")
             div(class="row")

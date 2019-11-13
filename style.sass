@@ -9,8 +9,21 @@ $red: #B9280D
 
 a
   @include a
+
+#logo
+  line-height: 1
+  font-weight: bold
+  font-size: 25px
+  color: $blue
+  display: contents
+  span
+    color: $orange
+
 #search
   margin-top: 20px
+  margin-bottom: 20px
+  border-bottom: 1px solid $grey
+  padding-bottom: 10px
   form
     display: flex
     input
@@ -36,13 +49,11 @@ a
   label
     font-size: 12px
     color: $grey
-  #logo
-    line-height: 1
-    font-weight: bold
-    font-size: 25px
-    color: $blue
-    span
-      color: $orange
+    margin-top: 7px
+
+  .second-line
+    margin-top: 20px
+
 
 #content
   .res
@@ -52,8 +63,14 @@ a
     margin: 10px 0
     list-style: none
     li
-      padding: 0
+      &:hover
+        background: lighten($grey, 20%)
       margin-bottom: 20px
+      border: 1px solid $grey
+      padding: 10px
+      font-size: 14px
+      transition: 0.3s
+      cursor: pointer
       .img
         //background: red
         //padding-right: 0
@@ -64,15 +81,18 @@ a
           min-width: 100%
       .content
         //background: green
-        padding-left: 0
+        //padding-left: 0
         .title
           @include a
+          font-size: 18px
         .src
           color: $red
         .stars
           color: $grey
           .active
             color: $orange
+          span
+            padding-left: 10px
         .time
           color: $red
           span
@@ -80,6 +100,8 @@ a
             margin-left: 10px
           //font-size: 12px
   .right
+    margin-top: 44px
+    border-left: 1px solid $grey
     .img
       .col-6
         padding-left: 0
@@ -92,24 +114,79 @@ a
       padding-bottom: 20px
     .thumbs
       color: $grey
-      i
-        width: 50px
-        height: 50px
-        display: inline-block
-        border-radius: 50%
-        border: 1px solid $grey
-        margin-left: 10px
+      .row
+        padding-top: 10px
+        padding-bottom: 10px
+        border-top: 1px solid $grey
+        border-bottom: 1px solid $grey
+      .icon-block
+        display: flex
+        flex-direction: row-reverse
+        .icon
+          min-width: 50px
+          max-width: 50px
+          min-height: 50px
+          max-height: 50px
+          //display: inline-block
+          border-radius: 50%
+          border: 1px solid $grey
+          margin-left: 10px
+          display: flex
+          align-items: center
+          justify-content: center
+          transition: 0.3s
+          cursor: pointer
+          &:hover
+            color: white
+            background: $grey
+
     .desc, .actors
       color: $orange
       padding-bottom: 50px
+      padding-top: 10px
     .comments
       color: $blue
       font-size: 20px
+      span
+        border-top: 1px solid $blue
+        padding: 5px 50px 0 10px
+
+
+#pagination
+  margin-top: 120px
+  .pagination
+    justify-content: center
+    .page-item
+      .page-link
+        border-color: $grey
+    .page-item.disabled
+      .page-link
+        color: $grey
+    .page-item
+      .page-link
+        color: $blue
+    .page-item.active
+      .page-link
+        border-color: $orange
+        background: $orange
+        color: white
+
+
 footer
-  margin-top: 150px
+  border-top: 1px solid $grey
+  padding-top: 20px
+  padding-bottom: 20px
+  margin-top: 50px
   ul
     padding: 0
     margin: 0
     list-style: none
     li
       text-align: center
+
+
+@media (min-width: 768px)
+  #content
+    ul
+      .content
+        padding-left: 0

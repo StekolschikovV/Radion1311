@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS-->
     <!--link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')-->
-    <!--link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.7.0/css/all.css')-->
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <title>ВИДЕОПОИСК</title>
     <link rel="stylesheet" href="./lib/bootstrap-4.3.1.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div id="search" class="container-fluid">
       <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-8">
           <div class="row">
-            <div id="logo" class="col-md-2">ВИДЕО<span>ПОИСК</span></div>
-            <div class="col-md-10">
+            <div id="logo" class="col-md-3">ВИДЕО<span>ПОИСК</span></div>
+            <div class="col-md-9">
               <form>
                 <input type="text" placeholder="enter request">
                 <input type="submit" value="Поиск">
@@ -25,10 +25,10 @@
             </div>
           </div>
         </div>
-        <div class="col-md-3 text-right d-none d-lg-block"><a href="#">Войти</a></div>
-        <div class="col-md-10">
+        <div class="col-md-4 text-right d-none d-lg-block"><a href="#">Войти</a></div>
+        <div class="col-md-8 second-line">
           <div class="row">
-            <div class="col-md-2"></div>
+            <div class="col-md-3"></div>
             <div class="col-md-2">
               <div class="form-check">
                 <input type="checkbox" class="form-check-input">
@@ -124,13 +124,34 @@
             <div class="col-12 thumbs">
               <div class="row">
                 <div class="col-7">Это телешоу понравилось 93% пользователей</div>
-                <div class="col-5  text-right"><i class="fas fa-thumbs-up"></i><i class="fas fa-thumbs-down"></i></div>
+                <div class="col-5 text-right icon-block">
+                  <div class="icon"><i class="fas fa-thumbs-down"></i></div>
+                  <div class="icon"><i class="fas fa-thumbs-up"></i></div>
+                </div>
               </div>
             </div>
             <div class="col-12 desc">Описание</div>
             <div class="col-12 actors">Актеры</div>
-            <div class="col-12 comments">Комментарии</div>
+            <div class="col-12 comments"><span>Комментарии</span></div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div id="pagination" class="container-fluid">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <div id="logo" class="col-md-3">ВИДЕО<span>ПОИСК</span></div>
+        </div>
+        <div class="col-12">
+          <nav class="text-center">
+            <ul class="pagination">
+              <li class="page-item disabled"><span class="page-link">Назад</span></li>
+              <li class="page-item"><a href="#" class="page-link">1</a></li>
+              <li class="page-item active"><span class="page-link">2<span class="sr-only">(current)</span></span></li>
+              <li class="page-item"><a href="#" class="page-link">3</a></li>
+              <li class="page-item"><a href="#" class="page-link">Дальше</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
