@@ -5,76 +5,139 @@ html(lang='en')
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         // Bootstrap CSS
-        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
-        link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.7.0/css/all.css')
+        //link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+        //link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.7.0/css/all.css')
         title Hello, world!
+        link(rel='stylesheet', href='./lib/bootstrap-4.3.1.css')
         link(rel='stylesheet', href='style.css')
 
     body
 
         div(class="container-fluid", id="search")
             div(class="row")
-                div(class="col-md-10")
+                div(class="col-md-9")
                     div(class="row")
-                        div(class="col-md-4") ВИДЕОПОИСК
-                        div(class="col-md-8")
+                        div(class="col-md-2", id="logo") ВИДЕО
+                            span ПОИСК
+                        div(class="col-md-10")
                             form
-                                input(type="email", placeholder="enter request")
+                                input(type="text", placeholder="enter request")
                                 input(type="submit", value="Поиск")
-                div(class="col-md-2") Войти
+
+                div(class="col-md-3 text-right d-none d-lg-block")
+                    a(href="#") Войти
                 div(class="col-md-10")
                     div(class="row")
-                        div(class="col-md-4")
+                        div(class="col-md-2")
                         div(class="col-md-2")
                             .form-check
                                 input.form-check-input(type='checkbox')
                                 label.form-check-label Более 20 мин
-                        div(class="col-md-2")
+                        div(class="col-md-3")
                             .form-check
                                 input.form-check-input(type='checkbox')
                                 label.form-check-label Исключительно CAMRip
 
-                         div(class="col-md-2")
+                         div(class="col-md-3")
                              .form-check
                                  input.form-check-input(type='checkbox')
                                  label.form-check-label Качество 720 и выше
 
         div(class="container-fluid", id="content")
             div(class="row")
-                div(class="col-md-10")
+                div(class="col-md-8")
                     div(class="row")
-                        div(class="col-12") Лучшие результаты поиска:
+                        div(class="col-12 res") Лучшие результаты поиска:
                     ul(class="row")
                         li(class="col-12")
                             div(class="row")
-                                div(class="col-md-4") img
-                                div(class="col-md-8")
+                                div(class="col-md-3 img text-center")
+                                    img(src='./img/search-result.png')
+                                div(class="col-md-9 content")
                                     div(class="row")
-                                        div(class="col-12") Игра Престолов 8 сезон 6 серия смотреть онлайн на русском
-                                        div(class="col-12") ИСТОЧНИК: FILMIX
-                                        div(class="col-12")
+                                        div(class="col-12 title") Игра Престолов 8 сезон 6 серия смотреть онлайн на русском
+                                        div(class="col-12 src") ИСТОЧНИК: FILMIX
+                                        div(class="col-12 stars")
+                                            i(class="fas fa-star active")
+                                            i(class="fas fa-star active")
+                                            i(class="fas fa-star active")
+                                            i(class="fas fa-star active")
                                             i(class="fas fa-star")
-                                            i(class="fas fa-star")
-                                            i(class="fas fa-star")
-                                            i(class="fas fa-star-half-alt")
-                                            i(class="far fa-star")
                                             span Рейтинг: 7,8/10 - 497 отзывов
-                                        div(class="col-12") Длительность видео: 01:45:00
+                                        div(class="col-12 time") Длительность видео:
+                                            span 01:45:00
+                                        div(class="col-12") Видео файл был загружен сегодня/128900 просмотров
+                        li(class="col-12")
+                            div(class="row")
+                                div(class="col-md-3 img text-center")
+                                    img(src='./img/search-result.png')
+                                div(class="col-md-9 content")
+                                    div(class="row")
+                                        div(class="col-12 title") Игра Престолов 8 сезон 6 серия смотреть онлайн на русском
+                                        div(class="col-12 src") ИСТОЧНИК: FILMIX
+                                        div(class="col-12 stars")
+                                            i(class="fas fa-star active")
+                                            i(class="fas fa-star active")
+                                            i(class="fas fa-star active")
+                                            i(class="fas fa-star active")
+                                            i(class="fas fa-star")
+                                            span Рейтинг: 7,8/10 - 497 отзывов
+                                        div(class="col-12 time") Длительность видео:
+                                            span 01:45:00
+                                        div(class="col-12") Видео файл был загружен сегодня/128900 просмотров
+                        li(class="col-12")
+                            div(class="row")
+                                div(class="col-md-3 img text-center")
+                                    img(src='./img/search-result.png')
+                                div(class="col-md-9 content")
+                                    div(class="row")
+                                        div(class="col-12 title") Игра Престолов 8 сезон 6 серия смотреть онлайн на русском
+                                        div(class="col-12 src") ИСТОЧНИК: FILMIX
+                                        div(class="col-12 stars")
+                                            i(class="fas fa-star active")
+                                            i(class="fas fa-star active")
+                                            i(class="fas fa-star active")
+                                            i(class="fas fa-star active")
+                                            i(class="fas fa-star")
+                                            span Рейтинг: 7,8/10 - 497 отзывов
+                                        div(class="col-12 time") Длительность видео:
+                                            span 01:45:00
+                                        div(class="col-12") Видео файл был загружен сегодня/128900 просмотров
+                        li(class="col-12")
+                            div(class="row")
+                                div(class="col-md-3 img text-center")
+                                    img(src='./img/search-result.png')
+                                div(class="col-md-9 content")
+                                    div(class="row")
+                                        div(class="col-12 title") Игра Престолов 8 сезон 6 серия смотреть онлайн на русском
+                                        div(class="col-12 src") ИСТОЧНИК: FILMIX
+                                        div(class="col-12 stars")
+                                            i(class="fas fa-star active")
+                                            i(class="fas fa-star active")
+                                            i(class="fas fa-star active")
+                                            i(class="fas fa-star active")
+                                            i(class="fas fa-star")
+                                            span Рейтинг: 7,8/10 - 497 отзывов
+                                        div(class="col-12 time") Длительность видео:
+                                            span 01:45:00
                                         div(class="col-12") Видео файл был загружен сегодня/128900 просмотров
 
-                div(class="col-md-2 d-none d-md-block")
-                    div(class="row")
-                        div(class="col-6") img
-                        div(class="col-6") img
-                        div(class="col-12") Игра Престолов
-                        div(class="col-12")
-                            div(class="col-8") Это телешоу понравилось 93% пользователей
-                            div(class="4")
-                                i(class="fas fa-thumbs-up")
-                                i(class="fas fa-thumbs-down")
-                        div(class="col-12") Описание
-                        div(class="col-12") Актеры
-                        div(class="col-12") Комментарии
+                div(class="col-md-4 d-none d-lg-block right")
+                    div(class="row img")
+                        div(class="col-6")
+                            img(src="./img/search-result-right.jpg")
+                        div(class="col-6")
+                            img(src="./img/search-result-right.jpg")
+                        div(class="col-12 title-big text-center") Игра Престолов
+                        div(class="col-12 thumbs")
+                            .row
+                                div(class="col-7") Это телешоу понравилось 93% пользователей
+                                div(class="col-5  text-right")
+                                    i(class="fas fa-thumbs-up")
+                                    i(class="fas fa-thumbs-down")
+                        div(class="col-12 desc") Описание
+                        div(class="col-12 actors") Актеры
+                        div(class="col-12 comments") Комментарии
 
         footer(class="container-fluid")
             div(class="row")
@@ -103,6 +166,6 @@ html(lang='en')
                         li DMCA
         // Optional JavaScript
         // jQuery first, then Popper.js, then Bootstrap JS
-        script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
-        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')
+        //script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+        //script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
+        //script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')

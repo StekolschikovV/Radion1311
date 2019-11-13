@@ -1,2 +1,108 @@
+a {
+  color: #5A38C4;
+  text-decoration: underline; }
+
 #search {
-  background: red; }
+  margin-top: 20px; }
+  #search form {
+    display: flex; }
+    #search form input {
+      outline: none;
+      border: 1px solid #FF780B; }
+      #search form input[type="text"] {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 10px; }
+      #search form input[type="submit"] {
+        text-transform: uppercase;
+        color: #FF780B;
+        padding: 1px 10px;
+        margin-left: -5px;
+        border-left: 0;
+        transition: 0.3s;
+        background: white; }
+        #search form input[type="submit"]:hover {
+          background: #FF780B;
+          color: white; }
+  #search input[type="checkbox"] {
+    margin-top: 8px; }
+  #search label {
+    font-size: 12px;
+    color: #9a9b9a; }
+  #search #logo {
+    line-height: 1;
+    font-weight: bold;
+    font-size: 25px;
+    color: #5A38C4; }
+    #search #logo span {
+      color: #FF780B; }
+
+#content .res {
+  margin-top: 10px; }
+
+#content ul {
+  padding: 0;
+  margin: 10px 0;
+  list-style: none; }
+  #content ul li {
+    padding: 0;
+    margin-bottom: 20px; }
+    #content ul li .img {
+      margin-right: 0; }
+      #content ul li .img img {
+        max-width: 100%;
+        min-width: 100%; }
+    #content ul li .content {
+      padding-left: 0; }
+      #content ul li .content .title {
+        color: #5A38C4;
+        text-decoration: underline; }
+      #content ul li .content .src {
+        color: #B9280D; }
+      #content ul li .content .stars {
+        color: #9a9b9a; }
+        #content ul li .content .stars .active {
+          color: #FF780B; }
+      #content ul li .content .time {
+        color: #B9280D; }
+        #content ul li .content .time span {
+          color: #9a9b9a;
+          margin-left: 10px; }
+
+#content .right .img .col-6 {
+  padding-left: 0; }
+  #content .right .img .col-6 img {
+    max-width: 100%; }
+
+#content .right .title-big {
+  font-size: 30px;
+  color: #5A38C4;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+#content .right .thumbs {
+  color: #9a9b9a; }
+  #content .right .thumbs i {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #9a9b9a;
+    margin-left: 10px; }
+
+#content .right .desc, #content .right .actors {
+  color: #FF780B;
+  padding-bottom: 50px; }
+
+#content .right .comments {
+  color: #5A38C4;
+  font-size: 20px; }
+
+footer {
+  margin-top: 150px; }
+  footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    footer ul li {
+      text-align: center; }

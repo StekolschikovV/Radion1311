@@ -15,6 +15,28 @@
 		"oAP": "/build/.idea",
 		"oF": 0
 		},
+	"/img/search-result-right.jpg": {
+		"ft": 16384,
+		"iS": 73507,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/search-result-right.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/search-result.png": {
+		"ft": 32768,
+		"iS": 36420,
+		"oA": 0,
+		"oAP": "/img/search-result.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -32,6 +54,16 @@
 		"oAP": "/index.html",
 		"oF": 0,
 		"oS": 0
+		},
+	"/lib/bootstrap-4.3.1.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/lib/bootstrap-4.3.1-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/script.ts": {
 		"cDF": 0,
