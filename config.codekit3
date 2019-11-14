@@ -37,6 +37,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/video.jpg": {
+		"ft": 16384,
+		"iS": 52442,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/video.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -49,7 +60,7 @@
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
-		"hM": 0,
+		"hM": 1,
 		"oA": 0,
 		"oAP": "/index.html",
 		"oF": 0,
@@ -88,6 +99,24 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/jade/footer.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/jade/img.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/jade/img.html",
+		"oF": 0
+		},
+	"/jade/img.jade": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/jade/img.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -205,13 +234,13 @@
 		"ft": 128,
 		"jxM": 0,
 		"ma": 0,
-		"mi": 0,
+		"mi": 1,
 		"moR": 0,
 		"moT": 2,
 		"oA": 0,
 		"oAP": "/script.js",
 		"oF": 0,
-		"rC": 0,
+		"rC": 1,
 		"tEC": 0
 		},
 	"/style.css": {
@@ -225,8 +254,8 @@
 		"oS": 3
 		},
 	"/style.sass": {
-		"aP": 0,
-		"bl": 0,
+		"aP": 1,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 2,
@@ -234,7 +263,7 @@
 		"oA": 0,
 		"oAP": "/style.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"/task/picturemessage_oxrw3lcy.mfs.png": {
