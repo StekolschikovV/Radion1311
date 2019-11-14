@@ -55,6 +55,50 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/jade/content.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/jade/content.html",
+		"oF": 0
+		},
+	"/jade/content.jade": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/jade/content.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/jade/footer.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/jade/footer.html",
+		"oF": 0
+		},
+	"/jade/footer.jade": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/jade/footer.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/jade/pagination.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/jade/pagination.html",
+		"oF": 0
+		},
 	"/jade/pagination.jade": {
 		"cB": 0,
 		"cOD": 1,
@@ -65,21 +109,21 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"/jade/test.html": {
+	"/jade/search.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/jade/test.html",
+		"oAP": "/jade/search.html",
 		"oF": 0
 		},
-	"/jade/test.jade": {
+	"/jade/search.jade": {
 		"cB": 0,
 		"cOD": 1,
 		"ft": 512,
 		"hM": 0,
-		"oA": 0,
-		"oAP": "/jade/test.html",
+		"oA": 1,
+		"oAP": "/jade/search.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -92,6 +136,58 @@
 		"oAP": "/lib/bootstrap-4.3.1-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/sass/content.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/sass/content.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/sass/footer.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/sass/footer.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/sass/pagination.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/sass/pagination.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/sass/search.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/sass/search.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
 		},
 	"/script.ts": {
 		"cDF": 0,

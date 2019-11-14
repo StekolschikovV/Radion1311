@@ -1,0 +1,101 @@
+#content
+  .res
+    margin-top: 10px
+  ul
+    padding: 0
+    margin: 10px 0
+    list-style: none
+    li
+      &:hover
+        background: lighten($grey, 20%)
+      margin-bottom: 20px
+      border: 1px solid $grey
+      padding: 10px
+      font-size: 14px
+      transition: 0.3s
+      cursor: pointer
+      .img
+        //background: red
+        //padding-right: 0
+        margin-right: 0
+        img
+          //width: 100%
+          max-width: 100%
+          min-width: 100%
+      .content
+        //background: green
+        //padding-left: 0
+        .title
+          @include a
+          font-size: 18px
+        .src
+          color: $red
+        .stars
+          color: $grey
+          .active
+            color: $orange
+          span
+            padding-left: 10px
+        .time
+          color: $red
+          span
+            color: $grey
+            margin-left: 10px
+  //font-size: 12px
+  .right
+    margin-top: 44px
+    border-left: 1px solid $grey
+    .img
+      .col-6
+        padding-left: 0
+        img
+          max-width: 100%
+    .title-big
+      font-size: 30px
+      color: $blue
+      padding-top: 20px
+      padding-bottom: 20px
+    .thumbs
+      color: $grey
+      .row
+        padding-top: 10px
+        padding-bottom: 10px
+        border-top: 1px solid $grey
+        border-bottom: 1px solid $grey
+      .icon-block
+        display: flex
+        flex-direction: row-reverse
+        .icon
+          min-width: 50px
+          max-width: 50px
+          min-height: 50px
+          max-height: 50px
+          //display: inline-block
+          border-radius: 50%
+          border: 1px solid $grey
+          margin-left: 10px
+          display: flex
+          align-items: center
+          justify-content: center
+          transition: 0.3s
+          cursor: pointer
+          &:hover
+            color: white
+            background: $grey
+
+    .desc, .actors
+      color: $orange
+      padding-bottom: 50px
+      padding-top: 10px
+    .comments
+      color: $blue
+      font-size: 20px
+      span
+        border-top: 1px solid $blue
+        padding: 5px 50px 0 10px
+
+@media (min-width: 768px)
+  #content
+    ul
+      .content
+        padding-left: 0
