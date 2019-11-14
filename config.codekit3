@@ -189,6 +189,17 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/script.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/script.ts": {
 		"cDF": 0,
 		"ft": 128,

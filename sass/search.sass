@@ -5,6 +5,27 @@
   padding-bottom: 10px
   form
     display: flex
+    position: relative
+    ul.active
+      display: block
+    ul
+      display: none
+      position: absolute
+      background: white
+      width: 100%
+      top: 27px
+      z-index: 9
+      list-style: none
+      padding: 0
+      margin: 0
+      border: 1px solid $orange
+      li
+        //background: green
+        padding: 0 5px
+        cursor: pointer
+        &:hover
+          background: $grey
+          color: white
     input
       outline: none
       border: 1px solid $orange

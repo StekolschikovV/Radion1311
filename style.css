@@ -16,7 +16,27 @@ a {
   border-bottom: 1px solid #9a9b9a;
   padding-bottom: 10px; }
   #search form {
-    display: flex; }
+    display: flex;
+    position: relative; }
+    #search form ul.active {
+      display: block; }
+    #search form ul {
+      display: none;
+      position: absolute;
+      background: white;
+      width: 100%;
+      top: 27px;
+      z-index: 9;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      border: 1px solid #FF780B; }
+      #search form ul li {
+        padding: 0 5px;
+        cursor: pointer; }
+        #search form ul li:hover {
+          background: #9a9b9a;
+          color: white; }
     #search form input {
       outline: none;
       border: 1px solid #FF780B; }
